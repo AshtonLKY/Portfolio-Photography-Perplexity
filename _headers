@@ -1,25 +1,8 @@
 /*
-  # Prevent clickjacking — stops your site being embedded in iframes on other sites
+  Basic-Auth: ashton:1337
   X-Frame-Options: DENY
-
-  # Password protection
-  Basic-Auth: Freakash:1337
-  # Stops browsers from guessing file types, reducing certain injection attacks
   X-Content-Type-Options: nosniff
-
-  # Controls how much referrer info is sent when navigating away from your site
   Referrer-Policy: strict-origin-when-cross-origin
-
-  # Forces HTTPS for 1 year — browsers won't load your site over plain HTTP
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-
-  # Restricts what browsers are allowed to load on your page
-  # Allows: your own files, Google Fonts, Fontshare (for your typography), Unsplash images
   Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com; font-src 'self' https://fonts.gstatic.com https://api.fontshare.com; img-src 'self' data: https://images.unsplash.com; script-src 'self'; connect-src 'self'; frame-ancestors 'none'
-
-  # Disables access to camera, microphone, geolocation — not needed for a portfolio
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-
-  # Disables Google's FLoC/Topics ad tracking
-  Permissions-Policy: interest-cohort=()
-	
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
