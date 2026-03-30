@@ -27,7 +27,6 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#" class="header__logo">
-        <!-- Inline SVG Logo: stylized eye/lens -->
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-label="ALKY's Mind's Eye logo" style="display:inline-block;vertical-align:middle;margin-right:10px;">
           <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.2"/>
           <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.2"/>
@@ -65,7 +64,7 @@
   <!-- ==================== HERO ==================== -->
   <section class="hero" id="hero">
     <div class="hero__bg">
-      <img src="https://cdn.filtergrade.com/wp-content/uploads/2019/08/07073559/david-marcu-TQVu4pnjTbc-unsplash-scaled.jpg" alt="Dramatic mountain landscape at golden hour" loading="eager">
+      <img src="./assets/DSC04256.jpg" alt="Dramatic portrait photography with architectural backdrop" loading="eager">
     </div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
@@ -89,109 +88,121 @@
 
       <div class="filter-tabs fade-in" role="tablist">
         <button class="filter-tab active" data-filter="all" role="tab">All</button>
-        <button class="filter-tab" data-filter="travel" role="tab">Travel & Landscape</button>
         <button class="filter-tab" data-filter="street" role="tab">Street & Urban</button>
         <button class="filter-tab" data-filter="portrait" role="tab">Portraits</button>
-        <button class="filter-tab" data-filter="event" role="tab">Events</button>
+        <button class="filter-tab" data-filter="travel" role="tab">Travel</button>
       </div>
 
       <div class="portfolio__grid" id="portfolioGrid">
-        <!-- Travel & Landscape -->
-        <div class="portfolio__item portfolio__item--tall" data-category="travel" data-index="0">
-          <img src="https://cdn.visualwilderness.com/wp-content/uploads/2019/10/Hidden-Lake-Wide-Sunset-2019-1200px.jpg" alt="Golden sunset over a hidden alpine lake" loading="lazy">
+
+        <!-- Portrait: Tattoo at dusk (portrait orientation — tall) -->
+        <div class="portfolio__item portfolio__item--tall" data-category="portrait" data-index="0">
+          <img src="./assets/DSC03026.jpg" alt="Portrait with floral tattoo at dusk rooftop" loading="lazy">
           <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Golden Hour</h3>
-            <p class="portfolio__item-cat">Travel & Landscape</p>
+            <h3 class="portfolio__item-title">Ink & Dusk</h3>
+            <p class="portfolio__item-cat">Portraits</p>
           </div>
         </div>
 
+        <!-- Street: Chinatown shophouses + bus -->
         <div class="portfolio__item" data-category="street" data-index="1">
-          <img src="https://images.squarespace-cdn.com/content/v1/55dae401e4b035628e255f24/1706158579185-MMKTYJQ7NE90PTT6AIS7/lightrails_chinatown.jpg" alt="Light trails through Singapore Chinatown at night" loading="lazy">
+          <img src="./assets/SGbus_Chinatown.jpg" alt="Singapore Chinatown shophouses with green bus" loading="lazy">
           <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Chinatown Nights</h3>
+            <h3 class="portfolio__item-title">Chinatown Colours</h3>
             <p class="portfolio__item-cat">Street & Urban</p>
           </div>
         </div>
 
+        <!-- Portrait: Red wall with vintage poster -->
         <div class="portfolio__item" data-category="portrait" data-index="2">
-          <img src="https://images.squarespace-cdn.com/content/v1/6167cf917afb6664ff251091/1676078625577-IFQO2DHW1ITXNW7PI1AO/DSCF2343.jpg" alt="Moody studio portrait with dramatic lighting" loading="lazy">
+          <img src="./assets/DSC04252.jpg" alt="Portrait at retro red wall with vintage poster in Chinatown" loading="lazy">
           <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Solitude</h3>
+            <h3 class="portfolio__item-title">70's Nostalgia</h3>
             <p class="portfolio__item-cat">Portraits</p>
           </div>
         </div>
 
-        <div class="portfolio__item" data-category="travel" data-index="3">
-          <img src="https://www.capturelandscapes.com/wp-content/uploads/2020/12/12112862_1684523468457999_1223598590_o.jpg" alt="Moody misty mountain landscape" loading="lazy">
+        <!-- Street: Porsche 911 in rain -->
+        <div class="portfolio__item" data-category="street" data-index="3">
+          <img src="./assets/SexyGladysTatsElephant_169.jpg" alt="Porsche 911 Carrera T in the rain" loading="lazy">
           <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Mist & Stone</h3>
-            <p class="portfolio__item-cat">Travel & Landscape</p>
-          </div>
-        </div>
-
-        <div class="portfolio__item" data-category="event" data-index="4">
-          <img src="https://images.squarespace-cdn.com/content/v1/5e61a438d6f6a944b6bb74b1/a30d3087-36bd-4c96-8aa8-274b83407e3d/Chicago+Corporate+Event+Photography-Stackoverflow+Chicago+conference+2023+at+Hilton+Chicago-118.jpg" alt="Professional corporate event photography" loading="lazy">
-          <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Tech Summit</h3>
-            <p class="portfolio__item-cat">Events & Commercial</p>
-          </div>
-        </div>
-
-        <div class="portfolio__item portfolio__item--tall" data-category="street" data-index="5">
-          <img src="https://photos.smugmug.com/Blog/Creative-Commons-2/i-tqLqHwB/0/KDmNsNNC8jk5BJzSngjZcwVwgr2LV8Rr55wccmhwQ/O/singapore-2023-chulia-street-at-night-01.jpg" alt="Singapore street scene at night with neon lights" loading="lazy">
-          <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">After Dark</h3>
+            <h3 class="portfolio__item-title">Rain Machine</h3>
             <p class="portfolio__item-cat">Street & Urban</p>
           </div>
         </div>
 
-        <div class="portfolio__item" data-category="portrait" data-index="6">
-          <img src="https://westcottu.com/wp-content/uploads/moody-portraits-westcottu-.jpg" alt="Dramatic moody portrait with studio lighting" loading="lazy">
+        <!-- Travel: Thai elephant -->
+        <div class="portfolio__item" data-category="travel" data-index="4">
+          <img src="./assets/ThaiElephantGirl.jpg" alt="Elephant encounter in Thailand" loading="lazy">
           <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Atmosphere</h3>
+            <h3 class="portfolio__item-title">Gentle Giant</h3>
+            <p class="portfolio__item-cat">Travel</p>
+          </div>
+        </div>
+
+        <!-- Portrait: Checkerboard corridor (tall) -->
+        <div class="portfolio__item portfolio__item--tall" data-category="portrait" data-index="5">
+          <img src="./assets/Porche911.jpg" alt="Portrait in corridor with checkered floor" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Leading Lines</h3>
             <p class="portfolio__item-cat">Portraits</p>
           </div>
         </div>
 
-        <div class="portfolio__item" data-category="travel" data-index="7">
-          <img src="https://cdn.filtergrade.com/wp-content/uploads/2019/08/07073648/jasper-boer-LJD6U920zVo-unsplash-scaled.jpg" alt="Dramatic valley landscape with cinematic tones" loading="lazy">
+        <!-- Street: Church steeple -->
+        <div class="portfolio__item" data-category="street" data-index="6">
+          <img src="./assets/DSC03024.jpg" alt="Church steeple with bell tower against clear sky" loading="lazy">
           <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Valley of Light</h3>
-            <p class="portfolio__item-cat">Travel & Landscape</p>
+            <h3 class="portfolio__item-title">Steeple</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
           </div>
         </div>
 
-        <div class="portfolio__item" data-category="event" data-index="8">
-          <img src="https://www.drewbirdphoto.com/wp-content/uploads/2020/06/corporate-events-drew-bird-photo-0011-1.jpg" alt="Professional event photography" loading="lazy">
+        <!-- Portrait: Profile with flowers at dusk -->
+        <div class="portfolio__item" data-category="portrait" data-index="7">
+          <img src="./assets/DSC03819_Compressed.jpg" alt="Profile portrait with flame tree flowers at twilight" loading="lazy">
           <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">The Gala</h3>
-            <p class="portfolio__item-cat">Events & Commercial</p>
-          </div>
-        </div>
-
-        <div class="portfolio__item" data-category="travel" data-index="9">
-          <img src="https://www.capturelandscapes.com/wp-content/uploads/2017/03/Mists-of-Rivendell-1068x713.jpg" alt="Mystical forest landscape in misty conditions" loading="lazy">
-          <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Enchanted</h3>
-            <p class="portfolio__item-cat">Travel & Landscape</p>
-          </div>
-        </div>
-
-        <div class="portfolio__item" data-category="portrait" data-index="10">
-          <img src="https://iso.500px.com/wp-content/uploads/2020/03/Alice-By-Kristina-Lang-Ree.jpeg" alt="Natural light portrait photography" loading="lazy">
-          <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Grace</h3>
+            <h3 class="portfolio__item-title">Twilight Bloom</h3>
             <p class="portfolio__item-cat">Portraits</p>
           </div>
         </div>
 
-        <div class="portfolio__item" data-category="event" data-index="11">
-          <img src="https://eventphotos.com.au/2022/wp-content/uploads/corporate-event-photography-scaled.webp" alt="Corporate event branding photography" loading="lazy">
+        <!-- Street: Chinatown temple bougainvillea -->
+        <div class="portfolio__item" data-category="street" data-index="8">
+          <img src="./assets/ChinatownRock.jpg" alt="Bougainvillea flowers in front of Chinatown temple" loading="lazy">
           <div class="portfolio__item-overlay">
-            <h3 class="portfolio__item-title">Brand Experience</h3>
-            <p class="portfolio__item-cat">Events & Commercial</p>
+            <h3 class="portfolio__item-title">Temple Garden</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
           </div>
         </div>
+
+        <!-- Portrait: Playful full-body -->
+        <div class="portfolio__item" data-category="portrait" data-index="9">
+          <img src="./assets/DSC03821_Compressed.jpg" alt="Playful full-body portrait in white dress outdoors" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Free Spirit</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+        <!-- Street: Shell station through foliage -->
+        <div class="portfolio__item" data-category="street" data-index="10">
+          <img src="./assets/DSC04239.jpg" alt="Shell station framed through foliage in Singapore" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Urban Frame</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
+        <!-- Street: Rock sculpture + pagoda -->
+        <div class="portfolio__item" data-category="street" data-index="11">
+          <img src="./assets/Church-1_Compressed.jpg" alt="Rock sculpture with Chinese pagoda in Singapore Chinatown" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">East Meets West</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -199,7 +210,7 @@
 
   <!-- ==================== FULL-BLEED DIVIDER ==================== -->
   <div class="divider-image fade-in">
-    <img src="https://www.presetpro.com/wp-content/uploads/2018/11/Landscape-Photography-Moody-Light-Presetpro.com_.jpg" alt="Dramatic landscape photography with moody lighting" loading="lazy">
+    <img src="./assets/DSC04256.jpg" alt="Dramatic portrait with architectural background" loading="lazy">
   </div>
 
 
@@ -208,16 +219,16 @@
     <div class="container">
       <div class="about__grid">
         <div class="about__image fade-in">
-          <img src="https://cdn.filtergrade.com/wp-content/uploads/2019/11/15134523/fabrizio-verrecchia-bI5Heh6xVWs-unsplash-scaled.jpg" alt="Photographer in natural setting" loading="lazy">
+          <img src="./assets/DSC04259.jpg" alt="Photographer portrait" loading="lazy">
         </div>
         <div class="fade-in">
           <p class="about__label">About</p>
           <h2 class="about__title">The Eye Behind the Lens</h2>
           <p class="about__text">
-            I'm Ashton, the photographer behind ALKY's Mind's Eye. Based in Singapore, I find beauty in the interplay between light and shadow — whether I'm chasing golden hour across mountain valleys, capturing the pulse of urban nightlife, or crafting intimate portraits in the studio.
+            I'm Ashton, the photographer behind ALKY's Mind's Eye. Based in Singapore, I find beauty in the interplay between light and shadow — whether I'm exploring the vibrant streets of Chinatown, capturing intimate portraits at golden hour, or documenting my travels across Southeast Asia.
           </p>
           <p class="about__text">
-            Every frame tells a story. My approach blends technical precision with an intuitive sense for the decisive moment. From travel adventures to corporate events, I bring a cinematic, moody aesthetic that transforms fleeting moments into lasting impressions.
+            Every frame tells a story. My approach blends technical precision with an intuitive sense for the decisive moment. From street photography to creative portraiture, I bring a cinematic, moody aesthetic that transforms fleeting moments into lasting impressions.
           </p>
           <div class="about__stats">
             <div>
@@ -229,8 +240,8 @@
               <p class="stat__label">Projects</p>
             </div>
             <div>
-              <p class="stat__number">4</p>
-              <p class="stat__label">Genres</p>
+              <p class="stat__number">SG</p>
+              <p class="stat__label">Based</p>
             </div>
           </div>
         </div>
@@ -253,7 +264,7 @@
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
           </svg>
           <h3 class="service-card__title">Travel & Landscape</h3>
-          <p class="service-card__text">Cinematic landscape and travel photography that captures the spirit of a place — from sweeping vistas to quiet, intimate details.</p>
+          <p class="service-card__text">Cinematic travel photography that captures the spirit of a place — from sweeping vistas to quiet, intimate details across Southeast Asia and beyond.</p>
         </div>
 
         <div class="service-card">
@@ -262,7 +273,7 @@
             <path d="M3 9h18M9 21V9"/>
           </svg>
           <h3 class="service-card__title">Street & Urban</h3>
-          <p class="service-card__text">Candid moments and city narratives. I document urban life with a raw, authentic energy — neon lights, back alleys, and human stories.</p>
+          <p class="service-card__text">Candid moments and city narratives. I document Singapore's urban life — Chinatown heritage, shophouse facades, rain-soaked streets, and everyday stories.</p>
         </div>
 
         <div class="service-card">
@@ -271,7 +282,7 @@
             <path d="M20 21a8 8 0 10-16 0"/>
           </svg>
           <h3 class="service-card__title">Portraits</h3>
-          <p class="service-card__text">Studio and environmental portraits with dramatic, moody lighting. Personal branding, headshots, and creative portraiture.</p>
+          <p class="service-card__text">Environmental and creative portraiture with natural light and moody tones. Personal branding, lifestyle shoots, and expressive character studies.</p>
         </div>
 
         <div class="service-card">
@@ -295,7 +306,7 @@
           <p class="contact__label">Get in Touch</p>
           <h2 class="contact__title">Let's Create Together</h2>
           <p class="contact__text">
-            Have a project in mind? Whether it's a commercial shoot, a personal portrait session, or a travel collaboration — I'd love to hear from you.
+            Have a project in mind? Whether it's a portrait session, a street photography walk, or a travel collaboration — I'd love to hear from you.
           </p>
 
           <div class="contact__methods">
@@ -335,7 +346,7 @@
         </div>
 
         <div class="contact__image fade-in">
-          <img src="https://images.squarespace-cdn.com/content/v1/5e61a438d6f6a944b6bb74b1/a30d3087-36bd-4c96-8aa8-274b83407e3d/Chicago+Corporate+Event+Photography-Stackoverflow+Chicago+conference+2023+at+Hilton+Chicago-118.jpg" alt="Professional event photography" loading="lazy">
+          <img src="./assets/DSC04252-3.jpg" alt="Portrait photography in Singapore" loading="lazy">
         </div>
       </div>
     </div>
