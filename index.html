@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALKY's Mind's Eye — Photography Portfolio</title>
+  <meta name="description" content="ALKY's Mind's Eye — Photography by Ashton. Travel, landscape, street, portrait, and event photography based in Singapore.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ALKY's Mind's Eye — Photography Portfolio">
+  <meta property="og:description" content="Travel, landscape, street, portrait, and event photography based in Singapore.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts: Zodiak (display) + Switzer (body) from Fontshare -->
+  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,600&f[]=switzer@300,400,500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23b4a082' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23b4a082' stroke-width='1.5'/%3E%3Cline x1='16' y1='2' x2='16' y2='8' stroke='%23b4a082' stroke-width='1'/%3E%3Cline x1='16' y1='24' x2='16' y2='30' stroke='%23b4a082' stroke-width='1'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-label="ALKY's Mind's Eye logo" style="display:inline-block;vertical-align:middle;margin-right:10px;">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="16" cy="16" r="2" fill="currentColor"/>
+          <line x1="16" y1="2" x2="16" y2="9" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+          <line x1="16" y1="23" x2="16" y2="30" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+          <line x1="2" y1="16" x2="9" y2="16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+          <line x1="23" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+        </svg>
+        ALKY's <span>Mind's Eye</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="./assets/DSC04256.jpg" alt="Dramatic portrait photography with architectural backdrop" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__subtitle">Photography by Ashton</p>
+      <h1 class="hero__title">See Through<br><em>My Eyes</em></h1>
+      <a href="#portfolio" class="hero__scroll">
+        <span>Explore</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ==================== PORTFOLIO ==================== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="portfolio__header fade-in">
+        <p class="portfolio__label">Selected Work</p>
+        <h2 class="portfolio__title">Portfolio</h2>
+      </div>
+
+      <div class="filter-tabs fade-in" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab">All</button>
+        <button class="filter-tab" data-filter="street" role="tab">Street & Urban</button>
+        <button class="filter-tab" data-filter="portrait" role="tab">Portraits</button>
+        <button class="filter-tab" data-filter="travel" role="tab">Travel</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolioGrid">
+
+        <!-- Portrait: Ink & Dusk — back tattoo at night rooftop (tall) -->
+        <div class="portfolio__item portfolio__item--tall" data-category="portrait" data-index="0">
+          <img src="./assets/DSC03024.jpg" alt="Back tattoo portrait at night with city lights" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Ink & Dusk</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+        <!-- Street: Chinatown shophouses + SG bus -->
+        <div class="portfolio__item" data-category="street" data-index="1">
+          <img src="./assets/SGbus_Chinatown.jpg" alt="Singapore Chinatown shophouses with green SG Bus" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Chinatown Colours</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
+        <!-- Portrait: 70s Nostalgia — red wall vintage poster -->
+        <div class="portfolio__item" data-category="portrait" data-index="2">
+          <img src="./assets/DSC04252-3.jpg" alt="Portrait at retro red wall with 70s Hair Salon vintage poster" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">70's Nostalgia</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+        <!-- Street: Porsche 911 in the rain -->
+        <div class="portfolio__item" data-category="street" data-index="3">
+          <img src="./assets/Porche911.jpg" alt="Porsche 911 Carrera T glistening in the rain" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Rain Machine</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
+        <!-- Travel: Thai elephant -->
+        <div class="portfolio__item" data-category="travel" data-index="4">
+          <img src="./assets/ThaiElephantGirl.jpg" alt="Elephant encounter in Thailand" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Gentle Giant</h3>
+            <p class="portfolio__item-cat">Travel</p>
+          </div>
+        </div>
+
+        <!-- Portrait: Free Spirit — playful white dress full body (tall) -->
+        <div class="portfolio__item portfolio__item--tall" data-category="portrait" data-index="5">
+          <img src="./assets/DSC03819_Compressed.jpg" alt="Playful full body portrait in white dress" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Free Spirit</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+        <!-- Street: Church cross with lens flare -->
+        <div class="portfolio__item" data-category="street" data-index="6">
+          <img src="./assets/Church-1_Compressed.jpg" alt="Church cross and bell tower against clear blue sky with lens flare" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Cross & Flare</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
+        <!-- Portrait: Flame tree profile at twilight -->
+        <div class="portfolio__item" data-category="portrait" data-index="7">
+          <img src="./assets/DSC03026.jpg" alt="Profile portrait with flame tree flowers at twilight" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Flame Tree</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+        <!-- Street: Rock sculpture with pagoda, Chinatown -->
+        <div class="portfolio__item" data-category="street" data-index="8">
+          <img src="./assets/ChinatownRock.jpg" alt="Rock sculpture with Chinese pagoda in Singapore Chinatown" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Rock & Pagoda</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
+        <!-- Portrait: White dress crouching smile -->
+        <div class="portfolio__item" data-category="portrait" data-index="9">
+          <img src="./assets/DSC03824_compressed.jpg" alt="Smiling portrait in white dress crouching outdoors" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Gentle Smile</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+        <!-- Street: Shell station framed through foliage -->
+        <div class="portfolio__item" data-category="street" data-index="10">
+          <img src="./assets/DSC03867.jpg" alt="Shell station framed through foliage in Singapore" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Urban Frame</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
+        <!-- Portrait: Neon sign bench -->
+        <div class="portfolio__item" data-category="portrait" data-index="11">
+          <img src="./assets/DSC04249.jpg" alt="Portrait seated on white bench under neon sign with checkered floor" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Neon Sign</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+        <!-- Street: Lion dance heads -->
+        <div class="portfolio__item" data-category="street" data-index="12">
+          <img src="./assets/DSC04239.jpg" alt="Lion dance costume heads piled together" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Lion Dance</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
+        <!-- Portrait: Elephant tattoo closeup -->
+        <div class="portfolio__item" data-category="portrait" data-index="13">
+          <img src="./assets/SexyGladysTatsElephant_169.jpg" alt="Close up of elephant and floral tattoo on back" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Elephant Tattoo</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+        <!-- Street: Caged songbird, bamboo cage -->
+        <div class="portfolio__item" data-category="street" data-index="14">
+          <img src="./assets/DSC04242.jpg" alt="Songbird in ornate bamboo cage with warm light" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Caged Songbird</h3>
+            <p class="portfolio__item-cat">Street & Urban</p>
+          </div>
+        </div>
+
+        <!-- Portrait: White dress crouching -->
+        <div class="portfolio__item" data-category="portrait" data-index="15">
+          <img src="./assets/DSC03821_Compressed.jpg" alt="Portrait crouching in white dress outdoors" loading="lazy">
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">White Dress</h3>
+            <p class="portfolio__item-cat">Portraits</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FULL-BLEED DIVIDER ==================== -->
+  <div class="divider-image fade-in">
+    <img src="./assets/DSC04256.jpg" alt="Dramatic portrait with architectural background" loading="lazy">
+  </div>
+
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image fade-in">
+          <img src="./assets/DSC04259.jpg" alt="Photographer portrait" loading="lazy">
+        </div>
+        <div class="fade-in">
+          <p class="about__label">About</p>
+          <h2 class="about__title">The Eye Behind the Lens</h2>
+          <p class="about__text">
+            I'm Ashton, the photographer behind ALKY's Mind's Eye. Based in Singapore, I find beauty in the interplay between light and shadow — whether I'm exploring the vibrant streets of Chinatown, capturing intimate portraits at golden hour, or documenting my travels across Southeast Asia.
+          </p>
+          <p class="about__text">
+            Every frame tells a story. My approach blends technical precision with an intuitive sense for the decisive moment. From street photography to creative portraiture, I bring a cinematic, moody aesthetic that transforms fleeting moments into lasting impressions.
+          </p>
+          <div class="about__stats">
+            <div>
+              <p class="stat__number">8+</p>
+              <p class="stat__label">Years</p>
+            </div>
+            <div>
+              <p class="stat__number">500+</p>
+              <p class="stat__label">Projects</p>
+            </div>
+            <div>
+              <p class="stat__number">SG</p>
+              <p class="stat__label">Based</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="services__header fade-in">
+        <p class="services__label">What I Offer</p>
+        <h2 class="services__title">Services</h2>
+      </div>
+
+      <div class="services__grid fade-in">
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <h3 class="service-card__title">Travel & Landscape</h3>
+          <p class="service-card__text">Cinematic travel photography that captures the spirit of a place — from sweeping vistas to quiet, intimate details across Southeast Asia and beyond.</p>
+        </div>
+
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          <h3 class="service-card__title">Street & Urban</h3>
+          <p class="service-card__text">Candid moments and city narratives. I document Singapore's urban life — Chinatown heritage, shophouse facades, rain-soaked streets, and everyday stories.</p>
+        </div>
+
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="8" r="5"/>
+            <path d="M20 21a8 8 0 10-16 0"/>
+          </svg>
+          <h3 class="service-card__title">Portraits</h3>
+          <p class="service-card__text">Environmental and creative portraiture with natural light and moody tones. Personal branding, lifestyle shoots, and expressive character studies.</p>
+        </div>
+
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/>
+            <circle cx="12" cy="13" r="4"/>
+          </svg>
+          <h3 class="service-card__title">Events & Commercial</h3>
+          <p class="service-card__text">Professional coverage of corporate events, conferences, product launches, and brand experiences. Polished and publication-ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="fade-in">
+          <p class="contact__label">Get in Touch</p>
+          <h2 class="contact__title">Let's Create Together</h2>
+          <p class="contact__text">
+            Have a project in mind? Whether it's a portrait session, a street photography walk, or a travel collaboration — I'd love to hear from you.
+          </p>
+
+          <div class="contact__methods">
+            <a href="https://wa.me/6598346620" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <svg class="contact-method__icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <div>
+                <p class="contact-method__label">WhatsApp</p>
+                <p class="contact-method__value">+65 9834 6620</p>
+              </div>
+            </a>
+
+            <a href="mailto:217lowky@gmail.com" class="contact-method">
+              <svg class="contact-method__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 7l-10 7L2 7"/>
+              </svg>
+              <div>
+                <p class="contact-method__label">Email</p>
+                <p class="contact-method__value">217lowky@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/ashtonlky/" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <svg class="contact-method__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+              </svg>
+              <div>
+                <p class="contact-method__label">Instagram</p>
+                <p class="contact-method__value">@ashtonlky</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__image fade-in">
+          <img src="./assets/DSC04252-3.jpg" alt="Portrait photography in Singapore" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2026 ALKY's Mind's Eye. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/ashtonlky/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/6598346620" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+        <a href="mailto:217lowky@gmail.com" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="M22 7l-10 7L2 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==================== LIGHTBOX ==================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close lightbox">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <div class="lightbox__caption">
+      <p class="lightbox__caption-title" id="lightboxTitle"></p>
+      <p class="lightbox__caption-cat" id="lightboxCat"></p>
+    </div>
+  </div>
+
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="./app.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SC
